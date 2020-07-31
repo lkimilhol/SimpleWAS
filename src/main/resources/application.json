@@ -1,0 +1,16 @@
+{
+  "port":1525,
+  "thread_num": 50,
+  "root_dir":"\\webapp\\html\\root",
+  "error_dir":"\\webapp\\html\\error",
+  "file_root":"index.html",
+  "file_404":"404.html",
+  "file_403":"403.html",
+  "file_500":"500.html",
+  "file_forbidden_exe": ".exe",
+  "host_localhost" : "localhost",
+  "host_a_com" : "a.com",
+  "host_b_com" : "b.com",
+  "servlet_name": "/Hello",
+  "servlet_mapping": {"/Greeting": "Hello", "/super.Greeting": "service.Hello"}
+}

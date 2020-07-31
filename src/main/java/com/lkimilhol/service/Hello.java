@@ -1,0 +1,41 @@
+package com.nhn.service;
+
+import com.nhn.simplewas.HttpRequest;
+import com.nhn.simplewas.HttpResponse;
+import com.nhn.simplewas.SimpleServlet;
+import com.nhn.simplewas.HandlerBase;
+import com.sun.net.httpserver.HttpExchange;
+
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.Date;
+
+public class Hello implements SimpleServlet {
+    @Override
+    public Writer service(HttpRequest req, HttpResponse res) throws Exception {
+        java.io.Writer writer = res.getWriter();
+        Date date = new Date();
+        writer.write(date.toString());
+        return writer;
+    }
+
+    @Override
+    public void handle(HttpExchange exchange) {
+        try {
+            HttpRequest req = new HttpRequest(exchange);
+            HttpResponse res = new HttpResponse();
+            Writer writer = service(req, res);
+            OutputStream os = exchange.getResponseBody();
+            exchange.sendResponseHeaders(HandlerBase.RESPONSE_SUCCESS, writer.toString().length());
+            os.write(writer.toString().getBytes());
+            os.close();
+        } catch (Exception e) {
+            StringWriter stringWriter = new StringWriter();
+            e.printStackTrace(new PrintWriter(stringWriter));
+            HandlerBase.LOGGER_ERROR_FILE_APPEND.error(stringWriter.toString());
+            HandlerBase.LOGGER_ERROR_STDOUT.error(stringWriter.toString());
+        }
+    }
+}
