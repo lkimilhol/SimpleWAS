@@ -1,4 +1,4 @@
-package com.nhn.service;
+package com.lkimilhol.service;
 
 import com.nhn.simplewas.HttpRequest;
 import com.nhn.simplewas.HttpResponse;

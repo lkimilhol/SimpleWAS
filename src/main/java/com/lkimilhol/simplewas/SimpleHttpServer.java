@@ -1,4 +1,4 @@
-package com.nhn.simplewas;
+package com.lkimilhol.simplewas;
 
 import com.sun.net.httpserver.HttpServer;
 
@@ -14,7 +14,7 @@ public class SimpleHttpServer {
 
         serverTest.createContext("/", new SimpleHandler());
         serverTest.createContext("/Hello", new Hello());
-        serverTest.createContext("/service.Hello", new com.nhn.service.Hello());
+        serverTest.createContext("/service.Hello", new com.lkimilhol.service.Hello());
         serverTest.setExecutor(Executors.newCachedThreadPool());
         serverTest.start();
     }
