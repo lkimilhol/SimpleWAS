@@ -1,4 +1,4 @@
-package com.nhn.simplewas;
+package com.lkimilhol.simplewas;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

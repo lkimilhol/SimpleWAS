@@ -1,4 +1,4 @@
-package com.nhn.simplewas;
+package com.lkimilhol.simplewas;
 
 import java.io.StringWriter;
 

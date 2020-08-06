@@ -1,4 +1,4 @@
-package com.nhn.simplewas;
+package com.lkimilhol.simplewas;
 
 import com.nhn.simplewas.hadnler.HostA;
 import com.nhn.simplewas.hadnler.HostB;
