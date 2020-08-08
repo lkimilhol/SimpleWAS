@@ -1,7 +1,7 @@
-package com.nhn.simplewas.hadnler;
+package com.lkimilhol.simplewas.hadnler;
 
-import com.nhn.simplewas.HandlerBase;
-import com.nhn.simplewas.ServerConfig;
+import com.lkimilhol.simplewas.HandlerBase;
+import com.lkimilhol.simplewas.ServerConfig;
 import com.sun.net.httpserver.HttpExchange;
 
 import java.io.OutputStream;

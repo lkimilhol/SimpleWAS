@@ -1,9 +1,9 @@
 package com.lkimilhol.service;
 
-import com.nhn.simplewas.HttpRequest;
-import com.nhn.simplewas.HttpResponse;
-import com.nhn.simplewas.SimpleServlet;
-import com.nhn.simplewas.HandlerBase;
+import com.lkimilhol.simplewas.HttpRequest;
+import com.lkimilhol.simplewas.HttpResponse;
+import com.lkimilhol.simplewas.SimpleServlet;
+import com.lkimilhol.simplewas.HandlerBase;
 import com.sun.net.httpserver.HttpExchange;
 
 import java.io.OutputStream;

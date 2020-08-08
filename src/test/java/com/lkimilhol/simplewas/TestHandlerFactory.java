@@ -1,6 +1,6 @@
 package com.lkimilhol.simplewas;
 
-import com.nhn.simplewas.hadnler.Localhost;
+import com.lkimilhol.simplewas.hadnler.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;

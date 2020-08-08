@@ -1,6 +1,6 @@
-package com.nhn.simplewas.hadnler;
+package com.lkimilhol.simplewas.hadnler;
 
-import com.nhn.simplewas.HandlerBase;
+import com.lkimilhol.simplewas.HandlerBase;
 
 public class HostA extends HandlerBase {
     @Override
