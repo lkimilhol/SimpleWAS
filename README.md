@@ -9,11 +9,11 @@
 
 ```
 #Make Executable jar File
-mvn clean project
+gradle build
 ```
 
 ### Project TODO
 Write input stream close
 Check Security
-Convert Gradle from maven
+Convert Gradle from maven <br>
 ~~Convert Spring project~~
