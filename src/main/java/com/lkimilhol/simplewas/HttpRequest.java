@@ -4,8 +4,8 @@ import com.sun.net.httpserver.HttpExchange;
 
 import java.io.InputStream;
 
-import static com.nhn.simplewas.HandlerBase.GET;
-import static com.nhn.simplewas.HandlerBase.POST;
+import static com.lkimilhol.simplewas.HandlerBase.GET;
+import static com.lkimilhol.simplewas.HandlerBase.POST;
 
 public class HttpRequest {
     static final String POST_STRING_DELIMITER = "\r\n";
