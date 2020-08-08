@@ -15,5 +15,5 @@ mvn clean project
 ### Project TODO
 Write input stream close
 Check Security
-Convert Gradle from maven 
+Convert Gradle from maven
 ~~Convert Spring project~~
