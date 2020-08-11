@@ -16,4 +16,5 @@ gradle build
 Write input stream close<br>
 Check Security<br>
 ~~Convert Gradle from maven~~ <br>
-Convert Spring project
+Convert Spring project<br>
+Check Testcase For MacOS's gradle build
