@@ -25,7 +25,7 @@ public class Localhost extends HandlerBase {
         int responseCode = -1;
         try {
             switch (method) {
-                case GET -> {
+                case GET : {
                     exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
                     String fileName = getUrlPath(requestedUri);
 
@@ -45,13 +45,15 @@ public class Localhost extends HandlerBase {
                         responseFileName = config.FILE_NAME_404;
                         responseCode = RESPONSE_PAGE_NOT_FOUND;
                     }
+                    break;
                 }
-                case POST -> {
+                case POST : {
                     //TODO Write POST Response
                     resp = getGetResponse(config.rootDir.getPath(), config.FILE_NAME_ROOT);
                     exchange.sendResponseHeaders(RESPONSE_SUCCESS, resp.length());
+                    break;
                 }
-                default -> {
+                default: {
                     //request method error
                     filePath = config.errorDir.getPath();
                     responseFileName = config.FILE_NAME_500;
