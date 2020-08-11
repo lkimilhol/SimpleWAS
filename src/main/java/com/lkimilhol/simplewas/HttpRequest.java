@@ -25,8 +25,8 @@ public class HttpRequest {
     public String getParameter(String key) throws Exception {
         String method = exchange.getRequestMethod();
         String v = "";
-        v = switch (method) {
-            case GET -> {
+        switch (method) {
+            case GET: {
                 String ret = "";
                 String query = exchange.getRequestURI().getQuery();
                 if (query != null ) {
@@ -39,9 +39,10 @@ public class HttpRequest {
                     }
                 }
                 if (ret == "") {throw new SimpleException(NOT_FOUND_KEY, NOT_FOUND_KEY_TEXT, exchange);}
-                yield ret;
+                v = ret;
+                break;
             }
-            case POST -> {
+            case POST: {
                 StringBuilder sb = new StringBuilder();
                 InputStream ios = exchange.getRequestBody();
                 int i;
@@ -71,12 +72,13 @@ public class HttpRequest {
                     }
                 }
                 if (valueFind == false) {throw new SimpleException(NOT_FOUND_KEY, NOT_FOUND_KEY_TEXT, exchange);}
-                yield ret;
+                v = ret;
+                break;
             }
-            default -> {
+            default: {
                 throw new SimpleException(INVALID_METHOD, INVALID_METHOD_TEXT, exchange);
             }
-        };
+        }
         return v;
     }
 }
