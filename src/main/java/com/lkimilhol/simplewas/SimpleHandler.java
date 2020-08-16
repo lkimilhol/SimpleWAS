@@ -7,7 +7,7 @@ import com.sun.net.httpserver.HttpHandler;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-public class SimpleHandler implements HttpHandler {
+public class    SimpleHandler implements HttpHandler {
     protected static final String PORT_DELIMITER = ":";
     protected static final String PARENT_DIR_DELIMITER = ":";
     protected static final String LOCALHOST = "localhost";
@@ -27,5 +27,4 @@ public class SimpleHandler implements HttpHandler {
             HandlerBase.LOGGER_ERROR_STDOUT.error(stringWriter.toString());
         }
     }
-
 }
