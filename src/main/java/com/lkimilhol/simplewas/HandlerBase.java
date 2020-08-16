@@ -45,11 +45,11 @@ public abstract class HandlerBase {
         String line;
         String resp = "";
         File file = new File(path+ "/" + FileName);
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-        while ((line = bufferedReader.readLine()) != null) {
-            resp += line;
+        try(BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file)))) {
+            while ((line = bufferedReader.readLine()) != null) {
+                resp += line;
+            }
         }
-        bufferedReader.close();
         return resp;
     }
 

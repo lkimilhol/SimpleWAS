@@ -18,14 +18,12 @@ public class Hello implements SimpleServlet {
 
     @Override
     public void handle(HttpExchange exchange) {
-        try {
+        try (OutputStream os = exchange.getResponseBody()) {
             HttpRequest req = new HttpRequest(exchange);
             HttpResponse res = new HttpResponse();
             Writer writer = service(req, res);
-            OutputStream os = exchange.getResponseBody();
             exchange.sendResponseHeaders(HandlerBase.RESPONSE_SUCCESS, writer.toString().length());
             os.write(writer.toString().getBytes());
-            os.close();
         } catch (Exception e) {
             StringWriter stringWriter = new StringWriter();
             e.printStackTrace(new PrintWriter(stringWriter));
