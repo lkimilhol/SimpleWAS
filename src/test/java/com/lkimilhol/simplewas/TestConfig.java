@@ -95,18 +95,4 @@ public class TestConfig {
         Object fileName = config.getObject("servlet_mapping");
         assertNotNull(fileName);
     }
-
-    @Test
-    public void TestRootDir() throws Exception {
-        ServerConfig config = ServerConfig.getInstance();
-        File dir = new File(new File("").getAbsolutePath() + config.ROOT_DIR);
-        assertTrue(dir.isDirectory());
-    }
-
-    @Test
-    public void TestErrorDir() throws Exception {
-        ServerConfig config = ServerConfig.getInstance();
-        File dir = new File(new File("").getAbsolutePath() + config.ERROR_DIR);
-        assertTrue(dir.isDirectory());
-    }
 }
