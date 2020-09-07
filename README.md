@@ -16,8 +16,8 @@ gradle build
 
 ~~- Check for unmappable character (0xED) errors~~<br>
 ~~- Write code for closing input stream~~<br>
-- Check for security issues
+- Check for security issues<br>
 ~~- Convert Maven into Gradle~~<br>
-- Apply Spring Framework to project
-- Examine test cases for Gradle build in MacOS
-- Develop DB connection
+- Apply Spring Framework to project<br>
+- Examine test cases for Gradle build in MacOS<br>
+- Develop DB connection<br>
