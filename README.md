@@ -14,7 +14,7 @@ gradle build
 
 ### Project 
 ~~Check Error unmappable character (0xED)~~<br>
-Write input stream close<br>
+~~Write input stream close~~<br>
 Check Security<br>
 ~~Convert Gradle from maven~~ <br>
 Convert Spring project<br>
