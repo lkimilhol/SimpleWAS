@@ -14,10 +14,10 @@ gradle build
 
 ### Project To-do List
 
-~~- Check for unmappable character (0xED) errors~~<br>
-~~- Write code for closing input stream~~<br>
-- Check for security issues<br>
-~~- Convert Maven into Gradle~~<br>
-- Apply Spring Framework to project<br>
-- Examine test cases for Gradle build in MacOS<br>
-- Develop DB connection<br>
+~~- Check for unmappable character (0xED) errors~~ <br>
+~~- Write code for closing input stream~~ <br>
+- Check for security issues <br>
+~~- Convert Maven into Gradle~~ <br>
+- Apply Spring Framework to project <br>
+- Examine test cases for Gradle build in MacOS <br>
+- Develop DB connection <br>
